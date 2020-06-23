@@ -1,15 +1,10 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/subset-Montserrat-Medium.eot');
-    src: url('../fonts/subset-Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/subset-Montserrat-Medium.woff2') format('woff2'),
-        url('../fonts/subset-Montserrat-Medium.woff') format('woff'),
-        url('../fonts/subset-Montserrat-Medium.ttf') format('truetype'),
-        url('../fonts/subset-Montserrat-Medium.svg#Montserrat-Medium') format('svg');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Montserrat';
+	src: url('../fonts/subset-Montserrat-Medium.eot');
+	src: url('../fonts/subset-Montserrat-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/subset-Montserrat-Medium.woff2') format('woff2'), url('../fonts/subset-Montserrat-Medium.woff') format('woff'), url('../fonts/subset-Montserrat-Medium.ttf') format('truetype'), url('../fonts/subset-Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+	font-weight: 400;
+	font-style: normal;
 }
-
 
 @font-face {
 	font-family: 'Montserrat';
@@ -41,6 +36,10 @@
 	src: url('../fonts/subset-Couture-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/subset-Couture-Bold.woff2') format('woff2'), url('../fonts/subset-Couture-Bold.woff') format('woff'), url('../fonts/subset-Couture-Bold.ttf') format('truetype'), url('../fonts/subset-Couture-Bold.svg#Couture-Bold') format('svg');
 	font-weight: 700;
 	font-style: normal;
+}
+body {
+	box-sizing: border-box;
+	min-width: 320px;
 }
 
 .header {
@@ -126,7 +125,7 @@
 	letter-spacing: -1.8px;
 }
 
-.header-title::first-line {
+.header-title-trav {
 	color: #d03958;
 }
 
@@ -147,7 +146,7 @@
 	position: absolute;
 	top: 145px;
 	left: -395px;
-	width: 400px;
+	max-width: 400px;
 	border-radius: 6px;
 	background-color: #d03958;
 	text-align: center;
@@ -164,7 +163,7 @@
 }
 
 .input-area {
-	width: 334px;
+	width: 83%;
 	height: 57px;
 	border-radius: 8px;
 	border: none;
@@ -176,7 +175,6 @@
 	font-weight: 400;
 	line-height: 25px;
 	letter-spacing: -0.4px;
-
 }
 
 .input-area:nth-child(2) {
@@ -242,7 +240,7 @@
 	margin-left: -45px;
 }
 
-.checkbox-wrap{
+.checkbox-wrap {
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -458,7 +456,6 @@
 	margin-top: 29px;
 	max-width: 355px;
 	padding: 19px 58px 43px 24px;
-
 }
 
 .dj-icon {
@@ -567,4 +564,210 @@
 	text-decoration: none;
 	margin-top: 20px;
 	margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+	.form-block {
+		position: static;
+		margin-top: 145px;
+		padding-top: 20px;
+	}
+	.title-wrapper {
+		max-width: 300px;
+	}
+	.header-title {
+		font-size: 55px;
+	}
+	.container {
+		padding-right: 15px;
+	}
+	.testiomonial {
+		margin-left: 15px;
+	}
+	.story-note {
+		margin-right: 5px;
+	}
+	.pictures {
+		justify-content: center;
+		margin-top: 51px;
+	}
+	.copyright {
+		margin-left: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding: 0;
+	}
+	.header {
+		padding-bottom: 70px;
+	}
+	.header-top {
+		flex-direction: column;
+		align-items: center;
+	}
+	.list {
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.list-item {
+		padding-top: 20px;
+	}
+	.header-block {
+		flex-direction: column;
+		align-items: center;
+		margin-top: -112px;
+	}
+	.menu {
+		margin-right: auto;
+	}
+	.title-wrapper {
+		text-align: center;
+		margin-bottom: -190px;
+		margin-left: 0;
+	}
+	.logo-wrap {
+		margin-top: 42px;
+	}
+	.header-title {
+		font-size: 50px;
+		line-height: 55px;
+	}
+	.header-note {
+		margin-top: 25px;
+	}
+	.form-wrapper {
+		margin-left: 0;
+	}
+	.form-block {
+		position: static;
+		max-width: 270px;
+		margin-top: 42px;
+		padding-top: 20px;
+	}
+	.input-area {
+		font-size: 16px;
+	}
+	.input-area:nth-child(2) {
+		margin-top: 20px;
+	}
+	.input-area:last-child {
+		width: 234px;
+		margin-bottom: 18px;
+		font-size: 18px;
+		padding-left: 10px;
+	}
+
+	.input-area::placeholder {
+		font-size: 16px;
+		line-height: 25px;
+		letter-spacing: -0.4px;
+	}
+	.label-style {
+		font-size: 13px;
+	}
+	.form-note {
+		margin: 0;
+	}
+	.fix-serv{
+		text-align: center;
+	}
+	.subtitle-serv {
+		line-height: 55px;
+		margin-top: 40px;
+	}
+	.cards-serv {
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 40px;
+	}
+	.card {
+		margin-top: 40px;
+	}
+	.story-wrap {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+	.story-note {
+		margin-bottom: -430px;
+	}
+	.wrapper-pricing {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.pricing {
+		padding-top: 35px;
+	}
+	.pricing-title {
+		margin-bottom: -20px;
+	}
+	.card-pricing {
+		flex-basis: 269px;
+		margin: 25px 3px 0 3px;
+	}
+	.subt-testiominial {
+		margin: 0;
+		font-size: 30px;
+	}
+	.djbravo-block {
+		flex-basis: 270px;
+		text-align: center;
+		padding-left: 0;
+		margin: 115px 0 0 36px;
+	}
+	.dj-icon {
+		top: -94px;
+		right: 97px;
+	}
+	.testiomonial {
+		text-align: center;
+		max-width: 270px;
+	}
+	.djlady-block {
+		flex-basis: 270px;
+		margin: 90px 14px 0 0;
+		text-align: center;
+		padding: 17px 30px 21px 26px;
+	}
+	.dj-lady {
+		top: -94px;
+		right: 78px;
+	}
+	.gallery {
+		max-width: 215px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.pictures {
+		max-width: 210px;
+		margin-top: 20px;
+	}
+	.testim-gallery {
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.subt-gallery {
+		font-size: 30px;
+		margin-top: 20px;
+	}
+	.gallery-pictures {
+		margin-left: 15px;
+	}
+	.footer-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.copyright {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.footer-logo {
+		margin-left: 25px;
+	}
 }
